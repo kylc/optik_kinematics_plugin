@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>optik_kinematics_plugin</name>
+  <version>0.1.0</version>
+  <description>An optimizing IK solver based on the Lie group of rigid transforms SE(3)</description>
+  <author email="kcesare@gmail.com">Kyle Cesare</author>
+  <maintainer email="kcesare@gmail.com">Kyle Cesare</maintainer>
+  <license>MIT OR Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake_ros</buildtool_depend>
+
+  <depend>moveit_core</depend>
+  <depend>pluginlib</depend>
+  <depend>rclcpp</depend>
+  <depend>tf2_geometry_msgs</depend>
+  <depend>tf2_eigen</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+    <moveit_core plugin="${prefix}/optik_kinematics_description.xml"/>
+  </export>
+</package>

@@ -1,0 +1,4 @@
+<library path="optik_kinematics_plugin">
+    <class name="optik_kinematics_plugin/OptIkKinematicsPlugin" type="optik_kinematics_plugin::OptIkKinematicsPlugin" base_class_type="kinematics::KinematicsBase">
+    </class>
+</library>
