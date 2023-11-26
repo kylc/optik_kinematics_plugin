@@ -13,8 +13,8 @@ find_package(tf2_eigen REQUIRED)
 include(FetchContent)
 FetchContent_Declare(
   optik
-  GIT_REPOSITORY https://github.com/kylc/optik
-  GIT_TAG kin-plugin # TODO
+  GIT_REPOSITORY https://github.com/kylc/optik.git
+  GIT_TAG master
   SOURCE_SUBDIR crates/optik-cpp)
 FetchContent_MakeAvailable(optik)
 
